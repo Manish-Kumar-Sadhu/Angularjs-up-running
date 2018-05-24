@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="">
+
+<p style="background-color:wheat;">The ng-switch directive hides and shows HTML sections depending on the value of the radio buttons.</p>
+<form>
+  <b>Choose a saiyan:</b>
+  <input type="radio" ng-model="myVar" value="1">Goku
+  <input type="radio" ng-model="myVar" value="2">Lawliet
+  <input type="radio" ng-model="myVar" value="3">Refreshments
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="1">
+     <h1>Son Goku</h1>
+     <img src="kid-goku.jpg"  width="1280" height="500" alt="image of goku">
+  </div>
+  <div ng-switch-when="2">
+     <h1>Ryuzaki Lawliet  </h1>
+     <img src="l_image.jpg" width ="1280" height="500" alt="image of vegeta">
+  </div>
+  <div ng-switch-when="3">
+     <h1>Son Gohan</h1>
+     <img src="refresh.webp" alt="image of refreshments">
+  </div>
+</div>
+
+
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
+		</script>
+</body>
+</html>
